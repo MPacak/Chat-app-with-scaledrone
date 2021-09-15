@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  width: 100%;
+
+  max-width: 100%;
+}
+
+/* .App-header {
+  background-color: #262626;
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+  color: white;
+} */
+
+/* .Messages-list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+} */
+
+.Messages-message {
+  display: flex;
+  margin-top: 10px;
+}
+
+.Messages-message.currentMember {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.Message-content {
+  display: inline-block;
+}
+
+.currentMember > .Message-content {
+  align-items: flex-end;
+}
+
+.Messages-message > .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+}
+
+.Message-content > .username {
+  display: block;
+  color: gray;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.Message-content > .text {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background-color: cornflowerblue;
+  color: white;
+  display: inline-block;
+}
+.Message-content > .date {
+  display: block;
+  color: rgba(97, 97, 97, 0.87);
+  font-size: 12px;
+}
+
+.currentMember > .Message-content .text {
+  background-color: rgb(83, 152, 255);
+}
+
+.online-member-list {
+  color: rgba(117, 1, 1, 0.993);
+}
+.message-container {
+  min-height: 18em;
+}
+
+.footer {
+  margin-top: 90px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
