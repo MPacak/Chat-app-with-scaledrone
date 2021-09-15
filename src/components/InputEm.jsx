@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
+import Bullseye from "../assets/bullseye.svg";
 
 import InputEmoji from "react-input-emoji";
 
@@ -32,7 +33,7 @@ export default function Input(props) {
           className=" rounded-pill btn btn-outline-info btn-sm "
           type="submit"
         >
-          Send
+          <img src={Bullseye} alt="Bootstrap" width="20" height="20" />
         </Button>
       </form>
     </div>
