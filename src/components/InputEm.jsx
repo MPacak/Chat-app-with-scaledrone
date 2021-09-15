@@ -16,7 +16,6 @@ export default function Input(props) {
     event.preventDefault();
     setState("");
   };
-
   return (
     <div className="Input">
       <form onSubmit={(event) => onSubmit(event)}>
@@ -28,7 +27,6 @@ export default function Input(props) {
           placeholder="Type a message"
           className="input-emoji "
         />
-
         <Button
           className=" rounded-pill btn btn-outline-info btn-sm "
           type="submit"
