@@ -28,10 +28,10 @@ export default function Input(props) {
           className="input-emoji "
         />
         <Button
-          className=" rounded-pill btn btn-outline-info btn-sm "
+          className=" rounded-pill btn-outline-info btn-outline-opacity-25 btn-sm btn-secondary "
           type="submit"
         >
-          <img src={Bullseye} alt="Bootstrap" width="20" height="20" />
+          <img src={Bullseye} alt="Send" width="20" height="20" />
         </Button>
       </form>
     </div>

@@ -74,8 +74,8 @@ class App extends Component {
         member,
         text: data,
         timestamp: dateString,
-        //id: this.state.messages.length,
-        id: member.id,
+        id: this.state.messages.length,
+        //id: member.id,
       });
       this.setState({ messages });
     });
@@ -96,7 +96,7 @@ class App extends Component {
       <div className="App">
         <Container>
           <Row>
-            <div className="bg-success text-center">Chat app</div>
+            <div className="App-header">Chat app</div>
           </Row>
           <Row>
             <Col
@@ -104,7 +104,7 @@ class App extends Component {
               sm={4}
               md={4}
               lg={4}
-              className="bg-primary border border-primary "
+              className="bg-primary bg-opacity-75 border border-primary "
             >
               <ErrorBoundary>
                 <ul className="online-member-list list-unstyled position-fixed">
@@ -121,8 +121,13 @@ class App extends Component {
                 </ul>
               </ErrorBoundary>
             </Col>
-
-            <Col xs={8} sm={8} md={8} lg={8} className="bg-secondary ">
+            <Col
+              xs={8}
+              sm={8}
+              md={8}
+              lg={8}
+              className="bg-secondary bg-opacity-75 "
+            >
               <ErrorBoundary>
                 <Messages
                   messages={this.state.messages}
