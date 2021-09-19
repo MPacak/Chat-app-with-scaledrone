@@ -4,7 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./App.css";
 import Messages from "./components/Messages";
 import Input from "./components/InputEm";
-import { randomColor, randomName } from "./components/Name-Color";
+import { randomColor } from "./helpers/randomColor";
+import { randomName } from "./helpers/randomName";
 import ErrorBoundary from "./components/ErrorBoundary";
 import OnlineMembers from "./components/OnlineMembers";
 
@@ -133,8 +134,6 @@ class App extends Component {
                   messages={this.state.messages}
                   currentMember={this.state.member}
                 />
-              </ErrorBoundary>
-              <ErrorBoundary>
                 <Input onSendMessage={this.onSendMessage} />
               </ErrorBoundary>
               <div
