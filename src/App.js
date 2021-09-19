@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import "./App.css";
 import Messages from "./components/Messages";
-import Input from "./components/InputEm";
+import Input from "./components/Input";
 import { randomColor } from "./helpers/randomColor";
 import { randomName } from "./helpers/randomName";
 import ErrorBoundary from "./components/ErrorBoundary";
