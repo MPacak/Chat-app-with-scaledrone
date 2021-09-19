@@ -15,6 +15,7 @@ export default function Input(props) {
   const onSubmit = (event) => {
     event.preventDefault();
     setState("");
+    props.onSendMessage(state);
   };
   return (
     <div className="Input">

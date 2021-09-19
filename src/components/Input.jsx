@@ -36,22 +36,3 @@ export default function Input(props) {
     </div>
   );
 }
-
-/* return (
-  <div className="Input">
-    <form onSubmit={(event) => onSubmit(event)}>
-      <input
-        onChange={(event) => onChange(event)}
-        value={state.text}
-        type="text"
-        placeholder="Enter your message and press ENTER"
-        autoFocus={true}
-        className="mx-10"
-      />
-      <Button className="rounded-pill" type="submit">
-        Send
-      </Button>
-    </form>
-  </div>
-);
-} */
