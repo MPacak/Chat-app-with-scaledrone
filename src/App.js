@@ -134,8 +134,6 @@ class App extends Component {
                   messages={this.state.messages}
                   currentMember={this.state.member}
                 />
-              </ErrorBoundary>
-              <ErrorBoundary>
                 <Input onSendMessage={this.onSendMessage} />
               </ErrorBoundary>
               <div
