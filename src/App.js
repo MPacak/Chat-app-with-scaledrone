@@ -76,7 +76,6 @@ class App extends Component {
         text: data,
         timestamp: dateString,
         id: this.state.messages.length,
-        //id: member.id,
       });
       this.setState({ messages });
     });
