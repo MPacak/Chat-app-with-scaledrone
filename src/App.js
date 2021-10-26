@@ -19,9 +19,6 @@ class App extends Component {
     },
   };
 
-  scrolltoBottom = () => {
-    this.messagesEnd.scrollIntoView({ behavior: "smooth" });
-  };
   componentDidMount() {
     this.drone = new window.Scaledrone(`${process.env.REACT_APP_CHANNEL_ID}`, {
       data: this.state.member,
@@ -75,7 +72,7 @@ class App extends Component {
         member,
         text: data,
         timestamp: dateString,
-        id: this.state.messages.length,
+        id: Math.random().toString(),
       });
       this.setState({ messages });
     });
@@ -89,6 +86,9 @@ class App extends Component {
       room: "observable-room",
       message,
     });
+  };
+  scrolltoBottom = () => {
+    this.messagesEnd.scrollIntoView({ behavior: "smooth" });
   };
 
   render() {
